@@ -1,0 +1,19 @@
+div{
+    border-style:double  ;
+    border-color:rgb(148, 187, 187);
+    padding-left: 5px;
+    margin:5px;
+    
+}
+#first{
+    background-color: bisque ;
+}
+.myclass{
+    background-color:grey;
+}
+#special{
+    text-decoration:underline;
+}
+p::first-letter{
+    font-size:2em;
+}
