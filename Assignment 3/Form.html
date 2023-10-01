@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery Validate Plugin -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <!-- Include additional validation methods (optional) -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/additional-methods.min.js"></script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registration-form">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        // Initialize the form validation
+        $(document).ready(function() {
+            $("#registration-form").validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 3 // Minimum length of the username
+                    },
+                    email: {
+                        required: true,
+                        email: true // Validate email format
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6 // Minimum length of the password
+                    },
+                    "confirm-password": {
+                        required: true,
+                        equalTo: "#password" // Ensure both passwords match
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Please enter your username",
+                        minlength: "Username must be at least 3 characters long"
+                    },
+                    email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    },
+                    password: {
+                        required: "Please enter a password",
+                        minlength: "Password must be at least 6 characters long"
+                    },
+                    "confirm-password": {
+                        required: "Please confirm your password",
+                        equalTo: "Passwords do not match"
+                    }
+                },
+                submitHandler: function(form) {
+                    // Form is valid, you can submit it here
+                    alert("Form is valid. Submitting data...");
+                    // Uncomment the next line to submit the form using AJAX
+                    // $(form).ajaxSubmit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

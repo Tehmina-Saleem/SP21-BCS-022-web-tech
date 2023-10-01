@@ -1,81 +1,2162 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>h1{
-        color:white;
-        background-color:brown
-       }</style>
-   
-    <title>Document</title>
-    <link rel="stylesheet" href="./mystyles.css">
-</head>
-<body>
-    <h1 style="color:gray;background-color:black">heading 1 </h1>
-    <h2>
-heading 2 
-    </h2>
-    <p style="color:gray;background-color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis? A earum adipisci maiores tenetur magni est pariatur minima facere consequuntur tempore provident reiciendis, ratione in doloremque dolore sapiente quam.</p>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner {
+            position: relative;
+        }
+
+        .carousel-item {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .carousel-item.next,
+        .carousel-item.prev {
+            transform: translateX(0) scale(0.5);
+            opacity: 0.5;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Center Frame Image Slider</title>
 </head>
 <body>
-    <h1>
-        hyperLinks
-    </h1>
-    this link will open the google page in new tab -->
-    <!-- <a href="http://google.com" target="_blank">Google</a>
-    <img src="tehmina.jpg" 
-    alt=""
-    width="300px" 
-    title="my image">
-    <h1>image with hyperlink</h1>
-    <a href="http://google.com">
-    <img src="tehmina.jpg " 
-    width="200px"
-    />
-</a>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem neque harum <em>this is emphasized</em> itaque magnam voluptate voluptatum odit voluptates eos eius minima ab a, praesentium dicta saepe adipisci enim, laborum aut illo.</p>
+
+<div class="container">
+    <h2>Center Frame Image Slider</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        Indicators -->
+<!-- <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ul>
+
+         The slideshow -->
+<!-- <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/image2.jpeg" alt="Image 1"class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image3.jpeg" alt="Image 2"class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image2.jpeg" alt="Image 3"class="d-block w-100">
+            </div>
+        </div>
+
+       
+    </div>
+</div>
+
+</body>
 </html> -->
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="/wordpress/wp-content/themes/yootheme/vendor/yootheme/theme-wordpress/assets/images/favicon.png"
+      sizes="any"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/wordpress/wp-content/themes/yootheme/vendor/yootheme/theme-wordpress/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="pingback"
+      href="https://demo.yootheme.com/wordpress/xmlrpc.php"
+    />
+    <title>Wordpress</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Wordpress &raquo; Feed"
+      href="https://demo.yootheme.com/wordpress/themes/district/?feed=rss2"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Wordpress &raquo; Comments Feed"
+      href="https://demo.yootheme.com/wordpress/themes/district/?feed=comments-rss2"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Wordpress &raquo; Home Comments Feed"
+      href="https://demo.yootheme.com/wordpress/themes/district/?feed=rss2&#038;page_id=1"
+    />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/demo.yootheme.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
+                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="https://demo.yootheme.com/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="mediaelement-css"
+      href="https://demo.yootheme.com/wordpress/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="wp-mediaelement-css"
+      href="https://demo.yootheme.com/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.1"
+      type="text/css"
+      media="all"
+    />
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      href="https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/css/theme.district.default.css?ver=1695739095"
+      rel="stylesheet"
+    />
+    <script id="wpp-json" type="application/json">
+      {
+        "sampling_active": 0,
+        "sampling_rate": 100,
+        "ajax_url": "https:\/\/demo.yootheme.com\/wordpress\/themes\/district\/index.php?rest_route=\/wordpress-popular-posts\/v1\/popular-posts",
+        "api_url": "https:\/\/demo.yootheme.com\/wordpress\/themes\/district\/index.php?rest_route=\/wordpress-popular-posts",
+        "ID": 0,
+        "token": "48314498c5",
+        "lang": 0,
+        "debug": 0
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://demo.yootheme.com/wordpress/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=6.3.2"
+      id="wpp-js-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://demo.yootheme.com/wordpress/themes/district/index.php?rest_route=/"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://demo.yootheme.com/wordpress/themes/district/index.php?rest_route=/wp/v2/pages/1"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://demo.yootheme.com/wordpress/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.3.1" />
+    <link
+      rel="canonical"
+      href="https://demo.yootheme.com/wordpress/themes/district/"
+    />
+    <link
+      rel="shortlink"
+      href="https://demo.yootheme.com/wordpress/themes/district/"
+    />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://demo.yootheme.com/wordpress/themes/district/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fdemo.yootheme.com%2Fwordpress%2Fthemes%2Fdistrict%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://demo.yootheme.com/wordpress/themes/district/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=https%3A%2F%2Fdemo.yootheme.com%2Fwordpress%2Fthemes%2Fdistrict%2F&#038;format=xml"
+    />
+    <style id="wpp-loading-animation-styles">
+      @-webkit-keyframes bgslide {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -200%;
+        }
+      }
+      @keyframes bgslide {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -200%;
+        }
+      }
+      .wpp-widget-placeholder,
+      .wpp-widget-block-placeholder,
+      .wpp-shortcode-placeholder {
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background: #dd3737;
+        background: linear-gradient(
+          90deg,
+          #dd3737 0%,
+          #571313 10%,
+          #dd3737 100%
+        );
+        background-size: 200% auto;
+        border-radius: 3px;
+        -webkit-animation: bgslide 1s infinite linear;
+        animation: bgslide 1s infinite linear;
+      }
+    </style>
+    <script>
+      window !== parent &&
+        parent.postMessage(
+          { source: "demo-iframe", href: location.href },
+          "https://yootheme.com"
+        );
+    </script>
+    <script src="https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?ver=4.0.13"></script>
+    <script src="https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/vendor/assets/uikit/dist/js/uikit-icons-district.min.js?ver=4.0.13"></script>
+    <script src="https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/js/theme.js?ver=4.0.13"></script>
+    <script>
+      window.yootheme = window.yootheme || {};
+      var $theme = (yootheme.theme = {
+        i18n: {
+          close: { label: "Close" },
+          totop: { label: "Back to top" },
+          marker: { label: "Open" },
+          navbarToggleIcon: { label: "Open menu" },
+          paginationPrevious: { label: "Previous page" },
+          paginationNext: { label: "Next page" },
+          searchIcon: { toggle: "Open Search", submit: "Submit Search" },
+          slider: {
+            next: "Next slide",
+            previous: "Previous slide",
+            slideX: "Slide %s",
+            slideLabel: "%s of %s",
+          },
+          slideshow: {
+            next: "Next slide",
+            previous: "Previous slide",
+            slideX: "Slide %s",
+            slideLabel: "%s of %s",
+          },
+          lightboxPanel: {
+            next: "Next slide",
+            previous: "Previous slide",
+            slideLabel: "%s of %s",
+            close: "Close",
+          },
+        },
+      });
+    </script>
+  </head>
+  <body class="home page-template-default page page-id-1">
+    <div
+      class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto"
+    >
+      <div class="uk-notification-message">
+        <a href="#tm-main">Skip to main content</a>
+      </div>
+    </div>
 
+    <div class="tm-page">
+      <header class="tm-header-mobile uk-hidden@l" uk-header>
+        <div class="uk-navbar-container">
+          <div class="uk-container uk-container-expand">
+            <nav
+              class="uk-navbar"
+              uk-navbar='{"container":".tm-header-mobile"}'
+            >
+              <div class="uk-navbar-left">
+                <a
+                  uk-toggle
+                  href="#tm-dialog-mobile"
+                  class="uk-navbar-toggle uk-navbar-toggle-animate"
+                >
+                  <div uk-navbar-toggle-icon></div>
+                </a>
+              </div>
 
+              <div class="uk-navbar-center">
+                <a
+                  href="https://demo.yootheme.com/wordpress/themes/district/"
+                  aria-label="Back to home"
+                  class="uk-logo uk-navbar-item"
+                >
+                  <img
+                    alt="District"
+                    loading="eager"
+                    width="165"
+                    height="60"
+                    src="/demo/district/images/logo-mobile.svg"
+                /></a>
+              </div>
+            </nav>
+          </div>
+        </div>
 
+        <div
+          id="tm-dialog-mobile"
+          class="uk-dropbar uk-dropbar-top"
+          uk-drop='{"clsDrop":"uk-dropbar","flip":"false","container":".tm-header-mobile","target-y":".tm-header-mobile .uk-navbar-container","mode":"click","target-x":".tm-header-mobile .uk-navbar-container","stretch":true,"bgScroll":"false","animation":"reveal-top","animateOut":true,"duration":300,"toggle":"false"}'
+        >
+          <div class="tm-height-min-1-1 uk-flex uk-flex-column">
+            <div class="uk-margin-auto-bottom uk-text-center">
+              <div class="uk-grid uk-child-width-1-1">
+                <div>
+                  <div class="uk-panel widget widget_nav_menu" id="nav_menu-2">
+                    <ul class="uk-nav uk-nav-default uk-nav-center">
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1 current_page_item uk-active"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/"
+                        >
+                          Home</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=2"
+                        >
+                          Products</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3"
+                        >
+                          Menu</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=4"
+                        >
+                          Gallery</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=20"
+                        >
+                          Catering</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children uk-parent"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=5"
+                        >
+                          About</a
+                        >
+                        <ul class="uk-nav-sub">
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page"
+                          >
+                            <a
+                              href="https://demo.yootheme.com/wordpress/themes/district/?page_id=21"
+                            >
+                              Team</a
+                            >
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page"
+                          >
+                            <a
+                              href="https://demo.yootheme.com/wordpress/themes/district/?page_id=32"
+                            >
+                              Blog</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page"
+                      >
+                        <a
+                          href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6"
+                        >
+                          Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <header class="tm-header uk-visible@l" uk-header>
+        <div class="tm-headerbar-default tm-headerbar tm-headerbar-top">
+          <div class="uk-container uk-container-large">
+            <div class="uk-flex uk-flex-center">
+              <div>
+                <a
+                  href="https://demo.yootheme.com/wordpress/themes/district/"
+                  aria-label="Back to home"
+                  class="uk-logo"
+                >
+                  <img
+                    alt="District"
+                    loading="eager"
+                    width="180"
+                    height="65"
+                    src="/demo/district/images/logo.svg" /><img
+                    class="uk-logo-inverse"
+                    alt="District"
+                    loading="eager"
+                    width="180"
+                    height="65"
+                    src="/demo/district/images/logo-inverted.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div
+          uk-sticky
+          media="@l"
+          show-on-up
+          animation="uk-animation-slide-top"
+          cls-active="uk-navbar-sticky"
+          sel-target=".uk-navbar-container"
+        >
+          <div class="uk-navbar-container">
+            <div class="uk-container uk-container-large">
+              <nav
+                class="uk-navbar"
+                uk-navbar='{"align":"left","container":".tm-header &gt; [uk-sticky]","boundary":".tm-header .uk-navbar-container"}'
+              >
+                <div class="uk-navbar-center">
+                  <ul class="uk-navbar-nav">
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1 current_page_item uk-active"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/"
+                      >
+                        Home</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=2"
+                      >
+                        Products</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3"
+                      >
+                        Menu</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=4"
+                      >
+                        Gallery</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=20"
+                      >
+                        Catering</a
+                      >
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children uk-parent"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=5"
+                      >
+                        About</a
+                      >
+                      <div class="uk-navbar-dropdown">
+                        <div>
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li
+                              class="menu-item menu-item-type-post_type menu-item-object-page"
+                            >
+                              <a
+                                href="https://demo.yootheme.com/wordpress/themes/district/?page_id=21"
+                              >
+                                Team</a
+                              >
+                            </li>
+                            <li
+                              class="menu-item menu-item-type-post_type menu-item-object-page"
+                            >
+                              <a
+                                href="https://demo.yootheme.com/wordpress/themes/district/?page_id=32"
+                              >
+                                Blog</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page"
+                    >
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6"
+                      >
+                        Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <main id="tm-main">
+        <!-- Builder #page --><style class="uk-margin-remove-adjacent">
+          @media (max-width: 1600px) {
+            #page\#0 > * {
+              background-size: 560px !important;
+            }
+          }
+          #page\#1 {
+            min-height: 550px;
+          }
+          @media (min-width: 1200px) {
+            #page\#1 {
+              min-height: 650px;
+            }
+          }
+          @media (min-width: 1921px) {
+            #page\#1 {
+              min-height: 750px;
+            }
+          }
+          #page\#2 {
+            min-height: 300px;
+          }
+          #page\#3 {
+            min-height: 300px;
+          }
+        </style>
+        <div class="uk-section-default uk-light">
+          <div
+            data-src="/wordpress/wp-content/themes/yootheme/cache/b4/home-hero-bg-b4600cf7.jpeg"
+            data-sources='[{"type":"image\/webp","srcset":"https:\/\/demo.yootheme.com\/wordpress\/themes\/district\/wp-admin\/admin-ajax.php?action=kernel&amp;p=image&amp;src=file%3D..%252Fdemo%252Fdistrict%252Fimages%252Fhome-hero-bg.jpg%26type%3Dwebp%2C85%26thumbnail%3D768%2C432%2C&amp;hash=c059b017 768w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/ce\/home-hero-bg-ce320385.webp 1024w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/05\/home-hero-bg-05d5127d.webp 1366w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/78\/home-hero-bg-78f851d5.webp 1600w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/ec\/home-hero-bg-ec36d2e9.webp 1920w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/17\/home-hero-bg-17104a6b.webp 2560w","sizes":"(max-aspect-ratio: 2560\/1440) 178vh"}]'
+            loading="eager"
+            uk-img
+            class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-small uk-flex uk-flex-middle"
+            uk-height-viewport="offset-top: true;"
+          >
+            <div class="uk-width-1-1">
+              <div class="uk-container uk-container-large">
+                <div
+                  class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin"
+                >
+                  <div class="uk-width-1-1@m">
+                    <h1 class="uk-heading-large uk-text-center">
+                      District Café &#038; Bakery
+                    </h1>
+                    <div class="uk-panel uk-text-center">
+                      28 Burton Street, 102 43 Berlin
+                      <br />
+                      Mo – Fri 10am – 7pm | Sat – Sun 10am – 6pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-default uk-section uk-section-large">
+          <div class="uk-container uk-container-xlarge">
+            <div
+              class="uk-grid tm-grid-expand uk-grid-small uk-grid-margin-small"
+              uk-grid
+            >
+              <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@l">
+                <div class="uk-panel uk-width-1-1">
+                  <div class="uk-margin uk-text-center">
+                    <div
+                      class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-grid-small"
+                      uk-grid
+                    >
+                      <div>
+                        <div class="el-item">
+                          <a
+                            class="uk-inline-clip uk-transition-toggle uk-link-toggle"
+                            href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/a2/home-menu-01-a24cfd27.webp  610w,
+                                  /wordpress/wp-content/themes/yootheme/cache/da/home-menu-01-da295a56.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/0e/home-menu-01-0e935aa6.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/a9/home-menu-01-a9f72da8.webp 1220w
+                                "
+                                sizes="(min-width: 610px) 610px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/28/home-menu-01-282f1d45.jpeg"
+                                width="610"
+                                height="730"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
 
+                            <div
+                              class="uk-overlay-default uk-transition-fade uk-position-cover"
+                            ></div>
+                            <div class="uk-position-center uk-transition-fade">
+                              <div
+                                class="uk-overlay uk-margin-remove-first-child"
+                              >
+                                <div
+                                  class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom"
+                                >
+                                  Breakfast &#038; Lunch
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="el-item">
+                          <a
+                            class="uk-inline-clip uk-transition-toggle uk-link-toggle"
+                            href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/dc/home-menu-02-dc34b581.webp  610w,
+                                  /wordpress/wp-content/themes/yootheme/cache/61/home-menu-02-61a247f9.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/44/home-menu-02-440a2dd2.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/e3/home-menu-02-e36e5adc.webp 1220w
+                                "
+                                sizes="(min-width: 610px) 610px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/3b/home-menu-02-3b072436.jpeg"
+                                width="610"
+                                height="730"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
 
+                            <div
+                              class="uk-overlay-default uk-transition-fade uk-position-cover"
+                            ></div>
+                            <div class="uk-position-center uk-transition-fade">
+                              <div
+                                class="uk-overlay uk-margin-remove-first-child"
+                              >
+                                <div
+                                  class="el-title uk-h3 uk-margin-top uk-margin-remove-bottom"
+                                >
+                                  Coffee &#038; Tea
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-grid-item-match uk-width-1-3@l">
+                <div
+                  class="uk-tile-primary uk-tile uk-tile-large uk-flex uk-flex-middle"
+                >
+                  <div class="uk-panel uk-width-1-1">
+                    <h2
+                      class="uk-h3 uk-width-medium uk-margin-auto uk-text-center"
+                    >
+                      Breakfast &amp; Fresh<br />
+                      Baked Goods
+                    </h2>
+                    <div
+                      class="uk-panel uk-margin uk-width-medium uk-margin-auto uk-text-center"
+                    >
+                      We offer all day breakfast, brunch and a selection of take
+                      away snacks, breads and cakes.
+                    </div>
+                    <div
+                      class="uk-margin uk-width-medium uk-margin-auto uk-text-center"
+                    >
+                      <a
+                        class="el-content uk-button uk-button-text"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6"
+                      >
+                        Our Stores
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-default">
+          <div
+            style="background-size: 700px auto"
+            data-src="/demo/district/images/home-products-bg.svg"
+            uk-img
+            class="uk-background-norepeat uk-background-bottom-right uk-section uk-section-large uk-flex uk-flex-middle"
+            uk-parallax="bgy: 300,450; easing: 1"
+            uk-height-viewport="offset-top: true; offset-bottom: 20;"
+          >
+            <div class="uk-width-1-1">
+              <div
+                class="uk-grid-margin uk-margin-remove-bottom uk-container uk-container-large"
+              >
+                <div class="uk-grid tm-grid-expand uk-child-width-1-1">
+                  <div class="uk-width-1-1@m">
+                    <h2
+                      class="uk-heading-small uk-margin-medium uk-width-xlarge uk-margin-auto uk-text-center"
+                    >
+                      A Small Selection From Our Bakery
+                    </h2>
+                    <div class="uk-text-center">
+                      <a
+                        class="el-content uk-button uk-button-text"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=2"
+                      >
+                        All Products
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin"
+              >
+                <div class="uk-width-1-1@m">
+                  <div
+                    uk-slider="center: 1; velocity: 0.7;"
+                    class="uk-margin uk-text-center"
+                  >
+                    <div class="uk-position-relative">
+                      <ul class="uk-slider-items uk-grid uk-grid-large">
+                        <li class="uk-width-1-1 uk-width-3-5@s uk-width-1-2@m">
+                          <div
+                            class="el-item uk-cover-container uk-transition-toggle"
+                            tabindex="0"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/87/home-products-01-8735cbfe.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/93/home-products-01-93103354.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/15/home-products-01-15a7825a.webp 1150w,
+                                  /wordpress/wp-content/themes/yootheme/cache/a1/home-products-01-a1a52480.webp 1366w,
+                                  /wordpress/wp-content/themes/yootheme/cache/15/home-products-01-1515bed8.webp 1599w
+                                "
+                                sizes="(min-width: 1150px) 1150px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/95/home-products-01-95795fce.png"
+                                width="1150"
+                                height="863"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
+                          </div>
+                        </li>
+                        <li class="uk-width-1-1 uk-width-3-5@s uk-width-1-2@m">
+                          <div
+                            class="el-item uk-cover-container uk-transition-toggle"
+                            tabindex="0"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/c1/home-products-02-c1e7fe9a.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/d9/home-products-02-d9894420.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/95/home-products-02-95fd2eef.webp 1150w,
+                                  /wordpress/wp-content/themes/yootheme/cache/f6/home-products-02-f68708d2.webp 1366w,
+                                  /wordpress/wp-content/themes/yootheme/cache/42/home-products-02-4237928a.webp 1599w
+                                "
+                                sizes="(min-width: 1150px) 1150px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/5c/home-products-02-5c665771.png"
+                                width="1150"
+                                height="863"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
+                          </div>
+                        </li>
+                        <li class="uk-width-1-1 uk-width-3-5@s uk-width-1-2@m">
+                          <div
+                            class="el-item uk-cover-container uk-transition-toggle"
+                            tabindex="0"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/fc/home-products-03-fc561246.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/56/home-products-03-56d16b33.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/ea/home-products-03-ea34b57c.webp 1150w,
+                                  /wordpress/wp-content/themes/yootheme/cache/72/home-products-03-72b61123.webp 1366w,
+                                  /wordpress/wp-content/themes/yootheme/cache/c6/home-products-03-c6068b7b.webp 1599w
+                                "
+                                sizes="(min-width: 1150px) 1150px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/ad/home-products-03-adbc52db.png"
+                                width="1150"
+                                height="863"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
+                          </div>
+                        </li>
+                        <li class="uk-width-1-1 uk-width-3-5@s uk-width-1-2@m">
+                          <div
+                            class="el-item uk-cover-container uk-transition-toggle"
+                            tabindex="0"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/4c/home-products-04-4c439452.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/4c/home-products-04-4cbbaac8.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/4e/home-products-04-4e3971c4.webp 1150w,
+                                  /wordpress/wp-content/themes/yootheme/cache/58/home-products-04-58c35076.webp 1366w,
+                                  /wordpress/wp-content/themes/yootheme/cache/ec/home-products-04-ec73ca2e.webp 1599w
+                                "
+                                sizes="(min-width: 1150px) 1150px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/15/home-products-04-1529404e.png"
+                                width="1150"
+                                height="863"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
+                          </div>
+                        </li>
+                        <li class="uk-width-1-1 uk-width-3-5@s uk-width-1-2@m">
+                          <div
+                            class="el-item uk-cover-container uk-transition-toggle"
+                            tabindex="0"
+                          >
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                  /wordpress/wp-content/themes/yootheme/cache/71/home-products-05-71f2788e.webp  768w,
+                                  /wordpress/wp-content/themes/yootheme/cache/c3/home-products-05-c3e385db.webp 1024w,
+                                  /wordpress/wp-content/themes/yootheme/cache/31/home-products-05-31f0ea57.webp 1150w,
+                                  /wordpress/wp-content/themes/yootheme/cache/dc/home-products-05-dcf24987.webp 1366w,
+                                  /wordpress/wp-content/themes/yootheme/cache/68/home-products-05-6842d3df.webp 1599w
+                                "
+                                sizes="(min-width: 1150px) 1150px"
+                              />
+                              <img
+                                decoding="async"
+                                src="/wordpress/wp-content/themes/yootheme/cache/e4/home-products-05-e4f345e4.png"
+                                width="1150"
+                                height="863"
+                                alt
+                                loading="lazy"
+                                class="el-image uk-transition-opaque"
+                              />
+                            </picture>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
 
+                    <ul
+                      class="el-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"
+                      uk-margin
+                    ></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-default uk-light">
+          <div
+            data-src="/wordpress/wp-content/themes/yootheme/cache/b4/home-about-bg-b462a9f1.jpeg"
+            data-sources='[{"type":"image\/webp","srcset":"https:\/\/demo.yootheme.com\/wordpress\/themes\/district\/wp-admin\/admin-ajax.php?action=kernel&amp;p=image&amp;src=file%3D..%252Fdemo%252Fdistrict%252Fimages%252Fhome-about-bg.jpg%26type%3Dwebp%2C85%26thumbnail%3D768%2C333%2C&amp;hash=47b06da0 768w, https:\/\/demo.yootheme.com\/wordpress\/themes\/district\/wp-admin\/admin-ajax.php?action=kernel&amp;p=image&amp;src=file%3D..%252Fdemo%252Fdistrict%252Fimages%252Fhome-about-bg.jpg%26type%3Dwebp%2C85%26thumbnail%3D1024%2C444%2C&amp;hash=81a2f446 1024w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/6e\/home-about-bg-6ec63663.webp 1366w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/ed\/home-about-bg-edc50953.webp 1600w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/4a\/home-about-bg-4adae7d5.webp 1920w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/0f\/home-about-bg-0fccef7f.webp 2560w","sizes":"(max-aspect-ratio: 2560\/1110) 231vh"}]'
+            uk-img
+            class="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-xlarge uk-flex uk-flex-middle"
+            uk-parallax="bgy: -200,100; easing: 1"
+            uk-height-viewport="offset-top: true; offset-bottom: 20;"
+          >
+            <div class="uk-width-1-1">
+              <div class="uk-container uk-container-xlarge">
+                <div
+                  class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin"
+                >
+                  <div class="uk-width-1-1@m">
+                    <h2
+                      class="uk-heading-medium uk-margin-large uk-text-center"
+                    >
+                      With Tradition and Passion.<br />
+                      Handmade for You.
+                    </h2>
+                    <div class="uk-margin uk-text-center">
+                      <a
+                        class="el-content uk-button uk-button-secondary uk-button-large"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=5"
+                      >
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="page#0" class="uk-section-default">
+          <div
+            style="background-size: 700px 650px"
+            data-src="/wordpress/wp-content/themes/yootheme/cache/b4/home-catering-bg-b4e22207.png"
+            data-sources='[{"type":"image\/webp","srcset":"\/wordpress\/wp-content\/themes\/yootheme\/cache\/e3\/home-catering-bg-e3e7fb2d.webp 700w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/89\/home-catering-bg-89b8c264.webp 768w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/25\/home-catering-bg-25578eec.webp 1024w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/cd\/home-catering-bg-cd56c010.webp 1366w, \/wordpress\/wp-content\/themes\/yootheme\/cache\/15\/home-catering-bg-15c60883.webp 1400w","sizes":"(min-width: 700px) 700px"}]'
+            uk-img
+            class="uk-background-norepeat uk-background-center-left uk-background-image@m uk-section uk-section-xlarge uk-flex uk-flex-middle"
+            uk-height-viewport="offset-top: true;"
+          >
+            <div class="uk-width-1-1">
+              <div
+                class="uk-hidden@m uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin"
+              >
+                <div class="uk-width-1-1 uk-hidden@m">
+                  <div class="uk-margin uk-hidden@m">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          /wordpress/wp-content/themes/yootheme/cache/16/home-catering-168dc066.webp  768w,
+                          /wordpress/wp-content/themes/yootheme/cache/5e/home-catering-5e8e1dc1.webp  900w,
+                          /wordpress/wp-content/themes/yootheme/cache/3c/home-catering-3c1471c4.webp 1024w,
+                          /wordpress/wp-content/themes/yootheme/cache/e4/home-catering-e4296985.webp 1366w,
+                          /wordpress/wp-content/themes/yootheme/cache/ff/home-catering-ff8921a5.webp 1600w
+                        "
+                        sizes="(min-width: 900px) 900px"
+                      />
+                      <img
+                        decoding="async"
+                        src="/wordpress/wp-content/themes/yootheme/cache/9a/home-catering-9aaf8f47.png"
+                        width="900"
+                        height="371"
+                        class="el-image"
+                        alt
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-grid-margin uk-container uk-container-large">
+                <div class="uk-grid tm-grid-expand" uk-grid>
+                  <div class="uk-width-1-2@m"></div>
+                  <div class="uk-width-1-2@m">
+                    <div class="uk-h6">We Cater to You</div>
+                    <h2>Our Food for Your Event</h2>
+                    <div class="uk-panel uk-margin">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo pellentesque eu, pretium quis, sem.
+                        Nulla consequat massa quis enim. Donec pede justo,
+                        fringilla vel, aliquet nec, vulputate eget, arcu. In
+                        enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                        justo. Nullam dictum felis eu pede.
+                      </p>
 
+                      <p>
+                        Consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                        dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                        viverra nulla ut metus varius laoreet. Quisque rutrum.
+                        Aenean imperdiet. Etiam ultricies nisi vel augue
+                        ultricies nisi.
+                      </p>
+                    </div>
+                    <div class="uk-margin-large">
+                      <a
+                        class="el-content uk-button uk-button-text"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=20"
+                      >
+                        Catering Menu
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="uk-grid tm-grid-expand uk-child-width-1-1 uk-margin-large uk-margin-remove-bottom"
+              >
+                <div class="uk-width-1-1@m">
+                  <div
+                    class="uk-margin uk-text-right"
+                    uk-parallax="x: 100,50; easing: 1"
+                    uk-scrollspy="target: [uk-scrollspy-class];"
+                  >
+                    <img
+                      decoding="async"
+                      src="/demo/district/images/home-catering-type.svg"
+                      width="1470"
+                      height="250"
+                      class="el-image uk-text-emphasis"
+                      alt
+                      loading="lazy"
+                      uk-svg
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-default uk-section uk-padding-remove-top">
+          <div
+            class="uk-grid tm-grid-expand uk-grid-small uk-margin-xlarge"
+            uk-grid
+          >
+            <div
+              class="uk-grid-item-match uk-width-1-1@m uk-width-1-2@l"
+              id="page#1"
+            >
+              <div class="uk-flex">
+                <div
+                  data-src="/demo/district/images/home-gallery-01.jpg"
+                  data-sources='[{"type":"image\/webp","srcset":"\/wordpress\/wp-content\/themes\/yootheme\/cache\/e3\/home-gallery-01-e39e9acf.webp 1600w","sizes":"(max-aspect-ratio: 1600\/900) 178vh"}]'
+                  uk-img
+                  class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-position-relative"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="uk-grid-item-match uk-width-1-2@m uk-width-1-4@l"
+              id="page#2"
+            >
+              <div class="uk-flex">
+                <div
+                  data-src="/demo/district/images/home-gallery-02.jpg"
+                  data-sources='[{"type":"image\/webp","srcset":"\/wordpress\/wp-content\/themes\/yootheme\/cache\/e1\/home-gallery-02-e1409de8.webp 1600w","sizes":"(max-aspect-ratio: 1600\/1740) 92vh"}]'
+                  uk-img
+                  class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-position-relative"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="uk-grid-item-match uk-width-1-2@m uk-width-1-4@l"
+              id="page#3"
+            >
+              <div class="uk-flex">
+                <div
+                  data-src="/demo/district/images/home-gallery-03.jpg"
+                  data-sources='[{"type":"image\/webp","srcset":"\/wordpress\/wp-content\/themes\/yootheme\/cache\/e0\/home-gallery-03-e0f560f5.webp 1600w","sizes":"(max-aspect-ratio: 1600\/1740) 92vh"}]'
+                  uk-img
+                  class="uk-background-norepeat uk-background-cover uk-background-center-center uk-tile uk-width-1-1 uk-position-relative"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="uk-overflow-hidden uk-section-default uk-section uk-section-large uk-padding-remove-bottom"
+        >
+          <div class="uk-margin-xlarge uk-container uk-container-large">
+            <div
+              class="uk-grid tm-grid-expand uk-grid-large uk-grid-divider"
+              uk-grid
+            >
+              <div class="uk-grid-item-match uk-flex-middle uk-width-2-3@m">
+                <div class="uk-panel uk-width-1-1">
+                  <div
+                    class="uk-panel uk-margin-remove-first-child uk-margin uk-width-2xlarge"
+                  >
+                    <div
+                      class="el-meta uk-h6 uk-margin-top uk-margin-remove-bottom"
+                    >
+                      Explore the Taste
+                    </div>
+                    <h2 class="el-title uk-margin-top uk-margin-remove-bottom">
+                      Visit Our District<br />
+                      Café &#038; Bakery
+                    </h2>
+
+                    <div class="el-content uk-panel uk-margin-top">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Donec quam felis,
+                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-grid-item-match uk-flex-middle uk-width-1-3@m">
+                <div class="uk-panel uk-width-1-1">
+                  <h3 class="uk-h4">Opening Hours</h3>
+                  <ul class="uk-list">
+                    <li class="el-item">
+                      <div
+                        class="uk-child-width-auto uk-grid-small uk-flex-bottom"
+                        uk-grid
+                      >
+                        <div class="uk-width-expand">
+                          <div class="el-title uk-margin-remove" uk-leader>
+                            Monday – Friday
+                          </div>
+                        </div>
+                        <div>
+                          <div class="el-meta">10am – 7pm</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="el-item">
+                      <div
+                        class="uk-child-width-auto uk-grid-small uk-flex-bottom"
+                        uk-grid
+                      >
+                        <div class="uk-width-expand">
+                          <div class="el-title uk-margin-remove" uk-leader>
+                            Saturday
+                          </div>
+                        </div>
+                        <div>
+                          <div class="el-meta">10am – 6pm</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="el-item">
+                      <div
+                        class="uk-child-width-auto uk-grid-small uk-flex-bottom"
+                        uk-grid
+                      >
+                        <div class="uk-width-expand">
+                          <div class="el-title uk-margin-remove" uk-leader>
+                            Sunday
+                          </div>
+                        </div>
+                        <div>
+                          <div class="el-meta">10am – 6pm</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="uk-margin">
+                    <a
+                      class="el-content uk-button uk-button-default"
+                      href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6"
+                    >
+                      Find a Store
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+            <div class="uk-width-1-1@m">
+              <div
+                class="uk-margin-remove-vertical uk-text-center"
+                uk-parallax="y: 80,0; easing: 1; media: @m"
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /wordpress/wp-content/themes/yootheme/cache/c5/home-opening-hours-c55fa42f.webp  768w,
+                      /wordpress/wp-content/themes/yootheme/cache/a2/home-opening-hours-a2047656.webp  880w,
+                      /wordpress/wp-content/themes/yootheme/cache/79/home-opening-hours-79aa3011.webp 1024w,
+                      /wordpress/wp-content/themes/yootheme/cache/10/home-opening-hours-10bce6c8.webp 1366w,
+                      /wordpress/wp-content/themes/yootheme/cache/c5/home-opening-hours-c5172875.webp 1598w,
+                      /wordpress/wp-content/themes/yootheme/cache/6b/home-opening-hours-6b7fb9e4.webp 1599w,
+                      /wordpress/wp-content/themes/yootheme/cache/3d/home-opening-hours-3d34ee85.webp 1600w
+                    "
+                    sizes="(min-width: 880px) 880px"
+                  />
+                  <img
+                    decoding="async"
+                    src="/wordpress/wp-content/themes/yootheme/cache/67/home-opening-hours-674815c9.png"
+                    width="880"
+                    height="240"
+                    class="el-image"
+                    alt
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-primary uk-section uk-padding-remove-bottom">
+          <div class="uk-container uk-container-large">
+            <div
+              class="uk-grid tm-grid-expand uk-grid-large uk-grid-margin-large"
+              uk-grid
+            >
+              <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+                <div class="uk-panel uk-width-1-1">
+                  <div
+                    class="uk-panel uk-margin-remove-first-child uk-margin uk-width-xlarge@s uk-margin-auto uk-text-left@m uk-text-center"
+                  >
+                    <div
+                      class="el-title uk-h2 uk-margin-top uk-margin-remove-bottom"
+                    >
+                      »There is nothing more<br />
+                      satisfying than fresh bread.«
+                    </div>
+
+                    <div class="el-content uk-panel uk-margin-top">
+                      <p>
+                        Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                        tempus, tellus eget condimentum rhoncus, sem quam semper
+                        libero, sit amet adipiscing sem neque sed ipsum. Nam
+                        quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+                        lorem. Maecenas nec odio et ante tincidunt tempus.
+                      </p>
+                    </div>
+
+                    <div class="uk-margin-top">
+                      <a
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=21"
+                        class="el-link uk-button uk-button-text"
+                        >Join the Team</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
+                <div class="uk-panel uk-width-1-1">
+                  <div class="uk-text-right@m uk-text-center">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          /wordpress/wp-content/themes/yootheme/cache/ec/home-cta-ec930558.webp  660w,
+                          /wordpress/wp-content/themes/yootheme/cache/09/home-cta-094f6e7b.webp  768w,
+                          /wordpress/wp-content/themes/yootheme/cache/37/home-cta-37316c9f.webp 1024w,
+                          /wordpress/wp-content/themes/yootheme/cache/a5/home-cta-a5df641b.webp 1320w
+                        "
+                        sizes="(min-width: 660px) 660px"
+                      />
+                      <img
+                        decoding="async"
+                        src="/wordpress/wp-content/themes/yootheme/cache/9b/home-cta-9b68c8c5.png"
+                        width="660"
+                        height="800"
+                        class="el-image"
+                        alt
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="builderwidget-2" class="builder">
+        <!-- Builder #builderwidget-2 --><style
+          class="uk-margin-remove-adjacent"
+        >
+          @media (max-width: 960px) {
+            #builderwidget-2\#4 form {
+              margin: auto;
+            }
+          }
+          #builderwidget-2\#4 form {
+            max-width: 380px;
+          }
+          #builderwidget-2\#5 {
+            max-width: 940px;
+          }
+          #builderwidget-2\#5 .el-title {
+            margin-bottom: 10px;
+          }
+          #builderwidget-2\#5 .el-content {
+            margin-top: 0 !important;
+          }
+        </style>
+        <div class="uk-section-default uk-section uk-section-large">
+          <div class="uk-container uk-container-xlarge">
+            <div
+              class="uk-grid tm-grid-expand uk-grid-large uk-grid-margin-large"
+              uk-grid
+            >
+              <div class="uk-width-1-3@m">
+                <h2
+                  class="uk-h4 uk-margin uk-width-medium@m uk-text-left@m uk-text-center"
+                >
+                  Subscribe to Our Newsletter<br class="uk-hidden@l" />
+                  to Receive All the News
+                </h2>
+                <div
+                  id="builderwidget-2#4"
+                  class="uk-margin-medium uk-text-left@m uk-text-center"
+                >
+                  <form
+                    class="uk-form uk-panel js-form-newsletter"
+                    method="post"
+                    action="https://demo.yootheme.com/wordpress/themes/district/wp-admin/admin-ajax.php?action=kernel&amp;p=theme%2Fnewsletter%2Fsubscribe&amp;hash=840bb5a0"
+                  >
+                    <div class="uk-position-relative">
+                      <button
+                        class="el-button uk-form-icon uk-form-icon-flip"
+                        uk-icon="icon: arrow-right;"
+                        title="Subscribe"
+                      ></button>
+                      <input
+                        class="el-input uk-input"
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        aria-label="Email Address"
+                        required
+                      />
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="settings"
+                      value="eyJuYW1lIjoibWFpbGNoaW1wIiwiYWZ0ZXJfc3VibWl0IjoibWVzc2FnZSIsIm1lc3NhZ2UiOiJZb3UndmUgYmVlbiBzdWJzY3JpYmVkIHN1Y2Nlc3NmdWxseS4iLCJyZWRpcmVjdCI6IiIsImNsaWVudF9pZCI6IiIsImxpc3RfaWQiOiIiLCJkb3VibGVfb3B0aW4iOnRydWV9"
+                    />
+                    <div class="message uk-margin uk-hidden"></div>
+                  </form>
+                </div>
+              </div>
+              <div class="uk-width-2-3@m">
+                <h2 class="uk-h4 uk-margin-large uk-text-left@m uk-text-center">
+                  Where to Find Us
+                </h2>
+                <div
+                  id="builderwidget-2#5"
+                  class="uk-margin uk-text-left@m uk-text-center"
+                >
+                  <div
+                    class="uk-grid uk-child-width-1-1 uk-child-width-1-3@s uk-grid-large uk-grid-divider uk-grid-match"
+                    uk-grid
+                  >
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <h3
+                          class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"
+                        >
+                          Hamburg
+                        </h3>
+
+                        <div class="el-content uk-panel uk-margin-top">
+                          Rormford Street 16
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <h3
+                          class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"
+                        >
+                          Berlin
+                        </h3>
+
+                        <div class="el-content uk-panel uk-margin-top">
+                          Burton Street 28
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <h3
+                          class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom"
+                        >
+                          Frankfurt
+                        </h3>
+
+                        <div class="el-content uk-panel uk-margin-top">
+                          Blackmore Street 13
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer>
+        <!-- Builder #footer -->
+        <div class="uk-section-default uk-section uk-section-small">
+          <div class="uk-container uk-container-xlarge">
+            <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
+              <div class="uk-width-1-4@m">
+                <div
+                  class="uk-h5 uk-margin-remove-vertical uk-text-left@m uk-text-center"
+                >
+                  <a
+                    class="el-link uk-link-reset"
+                    href="https://demo.yootheme.com/wordpress/themes/district/?page_id=1"
+                    >Fresh Baked Goods</a
+                  >
+                </div>
+                <div
+                  class="uk-divider-small uk-margin-small uk-width-small uk-visible@m"
+                ></div>
+              </div>
+              <div class="uk-width-1-2@m">
+                <div class="uk-text-center">
+                  <ul
+                    class="uk-margin-remove-bottom uk-subnav uk-subnav-divider uk-flex-center"
+                    uk-margin
+                  >
+                    <li class="el-item">
+                      <a
+                        class="el-link"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3"
+                        >Menu</a
+                      >
+                    </li>
+                    <li class="el-item">
+                      <a
+                        class="el-link"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=5"
+                        >About</a
+                      >
+                    </li>
+                    <li class="el-item">
+                      <a
+                        class="el-link"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6"
+                        >Contact</a
+                      >
+                    </li>
+                    <li class="el-item">
+                      <a
+                        class="el-link"
+                        href="https://demo.yootheme.com/wordpress/themes/district/?page_id=19"
+                        >Imprint</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="uk-panel uk-text-small uk-text-muted uk-margin uk-text-center@m uk-text-center"
+                >
+                  ©
+                  <script>
+                    document.currentScript.insertAdjacentHTML(
+                      "afterend",
+                      '<time datetime="' +
+                        new Date().toJSON() +
+                        '">' +
+                        new Intl.DateTimeFormat(document.documentElement.lang, {
+                          year: "numeric",
+                        }).format() +
+                        "</time>"
+                    );
+                  </script>
+                  District. All rights reserved. Powered by
+                  <a class="uk-link-text" href="https://yootheme.com/"
+                    >YOOtheme</a
+                  >.
+                </div>
+              </div>
+              <div class="uk-width-1-4@m">
+                <div
+                  class="uk-flex uk-flex-center uk-flex-right@m uk-margin-remove-vertical"
+                >
+                  <div
+                    class="uk-grid uk-child-width-auto uk-grid-column-small uk-grid-match"
+                    uk-grid
+                  >
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <div
+                          class="el-title uk-margin-top uk-margin-remove-bottom"
+                        >
+                          Follow Us&emsp; —
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <a href="https://facebook.com/yootheme"
+                          ><span
+                            class="el-image uk-text-emphasis"
+                            uk-icon="icon: facebook; width: 20; height: 20;"
+                          ></span
+                        ></a>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        class="el-item uk-panel uk-margin-remove-first-child"
+                      >
+                        <a href="https://www.instagram.com/"
+                          ><span
+                            class="el-image uk-text-emphasis"
+                            uk-icon="icon: instagram; width: 20; height: 20;"
+                          ></span
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://demo.yootheme.com/wordpress/wp-includes/js/comment-reply.min.js?ver=6.3.1"
+      id="comment-reply-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://demo.yootheme.com/wordpress/wp-content/themes/yootheme/vendor/yootheme/builder-newsletter/app/newsletter.min.js?ver=4.0.13"
+      id="script:newsletter-js"
+    ></script>
+  </body>
+</html>
