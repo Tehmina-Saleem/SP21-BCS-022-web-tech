@@ -1,0 +1,178 @@
+
+/* Custom CSS for Colorful Landing Page */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+   width:100%;
+   margin-left: 0px;
+   margin-right: 10px;
+  
+   
+}
+
+.row .btn1 {
+    background-color: #2fbd3b;
+ color: white;
+    margin-top: 15px;
+}
+.row .btn2 {
+    background-color: #2fbd3b;
+    margin-top: 15px;
+    color: white;
+}.row .btn3 {
+    background-color: #2fbd3b;
+    margin-top: 15px;
+    color: white;
+}
+.row .btn4 {
+    background-color: #ffffff;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.row .btn5 {
+    background-color: #ffffff;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.row .btn6 {
+    background-color: #ffffff;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+}
+  .btn1:hover {
+    background-color: #179421;
+}
+.btn2:hover {
+    background-color: #179421;
+}
+.btn3:hover {
+    background-color: #179421;
+}
+.btn4:hover {
+    background-color: #179421;
+    margin-top: 15px;
+}
+.btn5:hover {
+    background-color: #179421;
+    margin-top: 15px;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-over-image1  {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:start;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #8a959c;
+    margin-top: 1000px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.box:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.text {
+    color: #fff;
+    font-size: 18px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b9b9b9;
+    margin-top: 100px;
+}
+
+.table-container {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    padding: 8px;
+    text-align: center;
+}
+
+.center-box {
+    width: 30%;
+    height: 200px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-text {
+    color: #fff;
+    font-size: 24px;
+    text-align: start;
+}
+ .btn7 {
+    background-color: #2fbd3b;
+ color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.btn7:hover{
+    transition: none;
+    background-color: #2fbd3b;
+    color: white;
+}
+.center-box{
+    margin-left: 40px;
+    margin-right: 0px;
+    padding-bottom: 30px;
+    height: 50%;text-align: start;
+}
+ .table .tr .td a{
+    transition: none;
+    border: none;
+    color: black;
+}
