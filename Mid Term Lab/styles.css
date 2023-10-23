@@ -19,6 +19,7 @@ body {
     background-color: #2fbd3b;
     margin-top: 15px;
     color: white;
+  
 }.row .btn3 {
     background-color: #2fbd3b;
     margin-top: 15px;
@@ -175,4 +176,7 @@ body {
     transition: none;
     border: none;
     color: black;
+}
+.form-control{
+    margin-top: 10px;
 }
