@@ -1,15 +1,18 @@
-console.log("This is java scriot code")
-var a=89;
-var b= 29;
-console.log(a + b)
-function sum(a,b){
-   return a*b
+window.onload=function(){
+    var btn = document.getElementById("btnadd");
+
+    btn.onclick= handdleadd;
+};
+function handdleadd(){
+var newtodo= document.getElementById("newtodo").value;
+var todos= document.getElementById("todos");
+var newtodotext= document.createTextNode(newtodo);
+var newli= document.createElement("li");
+newli.appendChild(newtodotext);
+todos.appendChild(newli);
 }
-result = sum(2, 4)
-console.log(result)
-function btnclicked(){
-    console.log('this button is clicked')
+function handdledelete(e){
+    var tag= e.target;
+    
 }
-function update(){
-    console.log("updating result")
-}
+
