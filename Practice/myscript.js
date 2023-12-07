@@ -13,6 +13,7 @@ todos.appendChild(newli);
 }
 function handdledelete(e){
     var tag= e.target;
-    
+    var li= tag.parentNode
+    li.parentNode.removeChild(li)
 }
 
