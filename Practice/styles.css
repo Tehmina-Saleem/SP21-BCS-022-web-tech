@@ -1,4 +1,4 @@
-#todos li button{
-    float:right;
-    color:red
+/* it will check if the new list item is empty then the input field border will go red */
+.error{
+    border: 1px solid red
 }
