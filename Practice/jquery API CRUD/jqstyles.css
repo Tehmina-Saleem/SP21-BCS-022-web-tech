@@ -2,3 +2,6 @@
     border-bottom: 2px dashed blue;
     margin-bottom: 2px;
 }
+.recipe btn btn-warning{
+    margin-left: 4px;
+}
