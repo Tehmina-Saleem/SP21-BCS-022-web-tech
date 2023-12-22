@@ -1,17 +1,17 @@
-// App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Login from './components/Login';
 import Register from './components/Register';
 import Api from "./components/api";
+import Calculator from "./components/calculator";
 
 function App() {
   return (
     <Router>
-     
-          <div id="root">
-            <div className="container">
+      <div id="root">
+      <div className="container">
               <div className="col-md-6">
                 <h2><strong> District </strong><br /></h2>
                 <h6>ASTRIAN BAKERY </h6>
@@ -53,6 +53,9 @@ function App() {
                       <li className="nav-item">
                         <Link className="nav-link" to="/register">Register</Link>
                       </li>
+                      <li className="nav-item">
+                        <Link className="nav-link" to="/calculator">Calculate</Link>
+                      </li>
                     </ul>
                   </div>
                 </nav>
@@ -60,16 +63,16 @@ function App() {
             </div>
           </div>
 
-          {/* Routes for components */}
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/api" element={<Api />} />
-          </Routes>
-
-       
+        
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/api" element={<Api />} />
+          <Route path="/calculator" element={<Calculator />} />
+        </Routes>
+      
     </Router>
   );
 }
-
 export default App;
+

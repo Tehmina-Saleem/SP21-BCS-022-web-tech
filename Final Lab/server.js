@@ -3,23 +3,33 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
-const coffeeRoutes = require('./routes/coffeeRoutes'); 
-
+const coffeeRoutes = require('./routes/coffeeroutes'); 
+const calculatorRoutes= require("./models/calculator")
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
 
+app.post('/api/calculate', (req, res) => {
+  const { operand1, operand2, operation, result } = req.body;
+
+  
+  console.log('Received data:', { operand1, operand2, operation, result });
+
+ 
+  res.json({ success: true, message: 'Data received successfully' });
+});
 mongoose.connect('mongodb://localhost:27017/mernapp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+app.use('/calculator', calculatorRoutes);
 
-// Import the Coffee model
+
 const Coffee = require('./models/Coffee');
 
-// Coffee Shop API Routes
+
 
 app.get('/api/products', async (req, res) => {
   try {
@@ -98,10 +108,12 @@ app.delete('/api/products/:id', async (req, res) => {
 });
 
 app.use('/auth', authRoutes);
-app.use('/coffee', coffeeRoutes); // Corrected path
+app.use('/coffee', coffeeRoutes); 
 
-// End of Coffee Shop API Routes
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+

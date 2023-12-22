@@ -11,9 +11,10 @@ const Api = () => {
   const coffeeIdToUpdate = 1; // Replace with the actual ID you want to update
 
   useEffect(() => {
-    // Make the PUT request when the component mounts
+    // Make the PUT request when the 'updatedCoffee' state changes
     updateCoffee();
-  }, []);
+  }, [updatedCoffee]);
+  
 
   const updateCoffee = () => {
     fetch(`http://localhost:5000/api/products/${coffeeIdToUpdate}`, {
@@ -38,9 +39,7 @@ const Api = () => {
   };
 
   return (
-    <div>
-      {/* Your component content goes here */}
-    </div>
+  <div></div>
   );
 };
 
