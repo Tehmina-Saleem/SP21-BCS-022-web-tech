@@ -2,15 +2,24 @@ console.clear();
 const express = require('express');
 const app = express();
 const mongoose= require("mongoose");
-const port = 6000;
+const { createproducts }= require("./productsoperations");
+const port = 40000;
 app.use(express.json());
-
-mongoose.connect("mongodb://localhost/mern").then(()=>{
-    console.log("Successfuly connection to mongodb created");
-}).catch(err=>{
-    console.log("Error connecting");
-     console.log(err)
+mongoose.connect("mongodb://localhost/mern",{
+    usenewurlparser:true,
+    useunifiedtopology:true,
 })
+.then (async()=>{
+    console.log("Successfuly connection to mongodb created");
+   let product= await createproducts("hp", 9000, ["great", "gorgeous"]);
+   console.log(product)
+})
+
+    
+.catch((err)=>{
+    console.log("Error connecting");
+     console.log(err);
+});
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
